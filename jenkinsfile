@@ -17,6 +17,6 @@ bat 'mvn test'
 stage ('Install Stage') {
 steps {
 withMaven(maven : 'maven') {
-bat 'mvn install'
+bat 'mvn clean install'
 } } } }}
 
